@@ -1,0 +1,88 @@
+:root{
+    --red:#e51e1f;
+    --lightgreen:#d3ecd4;
+    --darkgreen:#3a483a;
+}/*variável de cor*/
+*{
+    box-sizing: border-box;
+}/*evita que imagens com borda "cresçam" além do especificado*/
+body{
+    margin: 0px;
+    background-image: url(imagens/background.png);
+    background-size: cover;
+    background-position: top;
+}/*configura o background do documento, além de deixar o body com margin 0*/
+.cabecario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:10px;
+}/*alinha o cabçario (logo e título no centro, de uma maneira que sejam um "elemento" só*/
+h1{
+    font-size: max(3.5vw, 30px);
+    color: var(--red);
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Keania One', cursive;
+}/*configura o título utilizando da variável imposta no começo do documento*/
+.logo{
+    border: 2px dotted black;
+    margin-right: 15px;
+    object-fit: cover;
+    width: max(3.5vw, 40px);
+    height: max(3.5vw, 40px);
+    padding: 0px;
+}/*configura a logo, deixando-a com um tamanho relativo e um limite para que não haja uma diminuição exacerbada*/
+.formulario{
+    margin-top: 15px;
+    font-family: 'Keania One', cursive;
+}
+form{
+    width: 35vw;
+    max-width:fit-content;
+    margin: 0 auto;
+    background-image: url(imagens/textureform.png);
+    background-size: cover;
+}/*Especifica as caracteerísticas do formulário, margins setadas em auto para centralização*/
+fieldset{
+    margin: 0;
+    border: dotted var(--lightgreen) 2px
+}
+label{
+    display: block;
+    font-size: max(2vw, 15px);
+    color: var(--lightgreen);
+}/*Display block para que as labels fiquem uma acima das outras*/
+p{
+    text-align: center;
+    font-size: max(1.8vw, 15px);
+    color: var(--red);
+    margin: 0 20px;
+    font-family: 'Keania One', cursive;
+}
+a{
+    text-decoration: none;
+    color: var(--red);
+}/*text-decoration: none. propositalmente esconde o link, a menos que se passe o mouse por cima, como especificado abaixo;*/
+a:hover{
+    color: rgb(122, 121, 202);
+    text-decoration: underline;
+}
+input, select{
+    height: max(20px, 2vw);
+    width: 100%;
+    background-color: var(--lightgreen);
+    color: var(--darkgreen);
+    font-family: 'Keania One', cursive;
+}
+.tudo{
+    margin-top: 20vh;
+}/*Torna a centralização vertical relativa ao tamanho da tela do usuário*/
+p, h1{
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+@media (max-width: 774px){
+    body{
+        background-size: auto;
+    }
+}

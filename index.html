@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="form_ars.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Keania+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="tudo">
+    <div class="cabecario">    <!-- logo e texto no cabeçario -->
+        <img src="imagens/arstotska.png" class="logo">
+        <h1>Insira suas credenciais</h1>
+    </div>
+    <div class="formulario">
+    <form method="get" action="error.html"> <!--Formulário com requisições nativas-->
+    <fieldset>
+        <label>Nome:
+            <input required pattern="(^[a-zA-Z\s]+$)" title="Utilize... letras, camarada" name="name">
+        </label>
+        <label class="inputid">id de acesso:
+            <input required pattern="(^\d+$)"  title="Utilize números, camarada" name="id">
+        </label>
+        <label>Função:
+            <select>
+                <option value="TOTAL ACESS">
+                    Major
+                </option>
+                <option value="III">
+                    Oficial III
+                </option>
+                <option value="II">
+                    Oficial II
+                </option>
+                <option value="I">
+                    Oficial I
+                </option>
+                <option value="A2">
+                    Atirador II
+                </option>
+                <option value="A1">
+                    Atirador I
+                </option>
+                <option value="i">
+                    Inteligência
+                </option>
+                <option value="E">
+                    Espião
+                </option>
+                <option selected value="1">
+                    Guarda de posto de controle
+                </option>
+            </select>
+        </label>
+        <label>
+            <input type="submit">
+        </label>
+    </fieldset>
+    </form>
+    </div>
+    <br>
+    <div>
+    <p><b>Bem-vindo de volta camarada.<br>
+    Ao inserir suas credencias você concorda com a nossa <a href="politica de dados.html">política de dados</a> totalmente segura e funcional.</b></p>
+    </div>
+</body>
+</html>
